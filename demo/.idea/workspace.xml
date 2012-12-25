@@ -28,10 +28,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hello.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/say/hello.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="10" selection-start="78" selection-end="78" vertical-scroll-proportion="0.30487806">
+            <state line="9" column="24" selection-start="130" selection-end="130" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goodbye.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/say/goodbye.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.18292683">
               <folding />
             </state>
           </provider>
@@ -49,6 +58,7 @@
       <list>
         <option value="$PROJECT_DIR$/app/controllers/say_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/say/hello.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/say/goodbye.html.erb" />
       </list>
     </option>
   </component>
@@ -424,6 +434,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/say/hello.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="130" selection-end="130" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/say_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="30" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
@@ -431,9 +448,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/say/hello.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/say/goodbye.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="78" selection-end="78" vertical-scroll-proportion="0.30487806">
+        <state line="3" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.18292683">
           <folding />
         </state>
       </provider>
