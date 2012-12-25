@@ -22,7 +22,7 @@
       <file leaf-file-name="say_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/say_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="20" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+            <state line="8" column="30" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -31,7 +31,7 @@
       <file leaf-file-name="hello.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/say/hello.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="81" selection-end="81" vertical-scroll-proportion="0.30487806">
+            <state line="5" column="10" selection-start="78" selection-end="78" vertical-scroll-proportion="0.30487806">
               <folding />
             </state>
           </provider>
@@ -47,6 +47,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/app/controllers/say_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/say/hello.html.erb" />
       </list>
     </option>
@@ -425,14 +426,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/controllers/say_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+        <state line="8" column="30" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/say/hello.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="81" selection-end="81" vertical-scroll-proportion="0.30487806">
+        <state line="5" column="10" selection-start="78" selection-end="78" vertical-scroll-proportion="0.30487806">
           <folding />
         </state>
       </provider>
