@@ -1,4 +1,12 @@
 Demo::Application.routes.draw do
+  get "other_methods/math"
+
+  get "other_methods/string"
+
+  get "other_methods/time"
+
+  get "other_methods/directories"
+
   get "say/hello"
 
   get "say/goodbye"
