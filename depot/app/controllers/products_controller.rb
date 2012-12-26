@@ -1,83 +1,67 @@
-class ProductsController < ApplicationController
-  # GET /products
-  # GET /products.json
-  def index
-    @products = Product.all
+#---
+# Excerpted from "Agile Web Development with Rails",
+# published by The Pragmatic Bookshelf.
+# Copyrights apply to this code. It may not be used to create training material, 
+# courses, books, articles, and the like. Contact us if you are in doubt.
+# We make no guarantees that this code is fit for any purpose. 
+# Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
+#---
+require 'test_helper'
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @products }
-    end
+class ProductsControllerTest < ActionController::TestCase
+  setup do
+    @product = products(:one)
+    @update = {
+        title:       'Lorem Ipsum',
+        description: 'Wibbles are fun!',
+        image_url:   'lorem.jpg',
+        price:       19.95
+    }
   end
 
-  # GET /products/1
-  # GET /products/1.json
-  def show
-    @product = Product.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @product }
-    end
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:products)
   end
 
-  # GET /products/new
-  # GET /products/new.json
-  def new
-    @product = Product.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @product }
-    end
+  test "should get new" do
+    get :new
+    assert_response :success
   end
 
-  # GET /products/1/edit
-  def edit
-    @product = Product.find(params[:id])
+  test "should create product" do
+    assert_difference('Product.count') do
+      post :create, product: @update
+    end
+
+    assert_redirected_to product_path(assigns(:product))
   end
 
-  # POST /products
-  # POST /products.json
-  def create
-    @product = Product.new(params[:product])
+  # ...
 
-    respond_to do |format|
-      if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
-        format.json { render json: @product, status: :created, location: @product }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @product.errors, status: :unprocessable_entity }
-      end
-    end
+  test "should show product" do
+    get :show, id: @product
+    assert_response :success
   end
 
-  # PUT /products/1
-  # PUT /products/1.json
-  def update
-    @product = Product.find(params[:id])
-
-    respond_to do |format|
-      if @product.update_attributes(params[:product])
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @product.errors, status: :unprocessable_entity }
-      end
-    end
+  test "should get edit" do
+    get :edit, id: @product
+    assert_response :success
   end
 
-  # DELETE /products/1
-  # DELETE /products/1.json
-  def destroy
-    @product = Product.find(params[:id])
-    @product.destroy
+  test "should update product" do
+    put :update, id: @product, product: @update
+    assert_redirected_to product_path(assigns(:product))
+  end
 
-    respond_to do |format|
-      format.html { redirect_to products_url }
-      format.json { head :no_content }
+  # ...
+
+  test "should destroy product" do
+    assert_difference('Product.count', -1) do
+      delete :destroy, id: @product
     end
+
+    assert_redirected_to products_path
   end
 end
